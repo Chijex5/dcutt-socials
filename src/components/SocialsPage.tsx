@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import { SocialLink } from './SocialLink';
+import { FaTiktok, FaSnapchat } from 'react-icons/fa';
 import { Logo } from './Logo';
 import { Instagram, Phone, Twitter, Globe } from 'lucide-react';
 export function SocialsPage() {
@@ -31,11 +32,11 @@ export function SocialsPage() {
             <div className="absolute inset-0 bg-gradient-to-b from-transparent via-pink-500/30 to-transparent"></div>
             <div className="absolute inset-0 bg-gradient-to-b from-transparent via-pink-300/20 to-transparent animate-pulse"></div>
           </div>
-          <SocialLink icon={<Instagram className="w-6 h-6" />} platform="Instagram" username="@dfootprint" link="https://instagram.com/dfootprint" delay={0.1} />
-          <SocialLink icon={<div className="w-6 h-6" />} platform="TikTok" username="@dfootprint" link="https://tiktok.com/@dfootprint" delay={0.2} />
-          <SocialLink icon={<Phone className="w-6 h-6" />} platform="WhatsApp" username="+1 (555) 123-4567" link="https://wa.me/15551234567" delay={0.3} />
-          <SocialLink icon={<div className="w-6 h-6" />} platform="Snapchat" username="dfootprint" link="https://snapchat.com/add/dfootprint" delay={0.4} />
-          <SocialLink icon={<Twitter className="w-6 h-6" />} platform="X" username="@dfootprint" link="https://x.com/dfootprint" delay={0.5} />
+          <SocialLink icon={<Instagram className="w-6 h-6" />} platform="Instagram" username="@d__footprint" link="https://www.instagram.com/D__footprint/" delay={0.1} />
+          <SocialLink icon={<FaTiktok className="w-6 h-6" />} platform="TikTok" username="@d_footprint" link="https://www.tiktok.com/@d_footprint?_t=8sB0MmAJIg9&_r=1" delay={0.2} />
+          <SocialLink icon={<Phone className="w-6 h-6" />} platform="WhatsApp" username="+234 812-1993-874" link="https://wa.me/2348121993874" delay={0.3} />
+          <SocialLink icon={<FaSnapchat className="w-6 h-6" />} platform="Snapchat" username="dfootprint" link="https://snapchat.com/t/E4Av8LWK" delay={0.4} />
+          <SocialLink icon={<Twitter className="w-6 h-6" />} platform="X" username="@dfootprint" link="https://x.com/Chikaahey" delay={0.5} />
           <SocialLink icon={<Globe className="w-6 h-6" />} platform="Website" username="dfootprint.com" link="https://dfootprint.com" delay={0.6} />
         </div>
         <div className={`mt-16 text-center transition-all duration-1000 delay-700 ${loaded ? 'opacity-100' : 'opacity-0'}`}>
@@ -64,7 +65,7 @@ export function SocialsPage() {
         }}></div>
           </div>)}
       </div>
-      <style jsx>{`
+      <style>{`
         @keyframes float {
           0%,
           100% {
