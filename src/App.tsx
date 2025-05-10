@@ -1,7 +1,7 @@
 import { useState, useEffect } from 'react';
 import { Instagram, Mail, Phone, MessageSquare, MapPin, Scissors, ArrowRight, Calendar, Clock } from 'lucide-react';
 
-export default function App() {
+export function App() {
   const [loaded, setLoaded] = useState(false);
   const [activeSection, setActiveSection] = useState('socials');
   const [animatedItems, setAnimatedItems] = useState([]);
