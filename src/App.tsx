@@ -145,10 +145,10 @@ Time: ${bookingTime}%0A
 ---
 Sent from D'CUTT website`;
       
-      // Open WhatsApp with the pre-filled message
+      
       window.open(`https://wa.me/2349068383256?text=${message}`, '_blank');
       
-      // Reset form
+      
       setBookingName('');
       setBookingService('Premium Haircuts');
       setBookingDate('');
